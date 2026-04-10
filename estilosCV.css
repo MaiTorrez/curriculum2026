@@ -14,13 +14,50 @@
     font-weight: normal;
     font-style: bold;
 }
+
 /* Aplicaciones de tipo, color y tamaños*/
 
 body {
-    background-color: #e6e6e7;
+    background-color: #f1f1f5;
 }
 
-footer {background-color: #c4bdcd;}
+header {
+    background-color: #c4bdcd;
+    min-height: 32vh;
+    padding: 29px 50px 22px;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+
+article {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    column-gap: 15px;
+}
+
+.contenedor {
+    display: flex;
+    width: 100vw;
+    max-width: 1200px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    background-color: #c4bdcd;
+}
 
 * {
     font-family: "Rosario", sans-serif;
@@ -29,14 +66,23 @@ footer {background-color: #c4bdcd;}
     font-style: normal;
     font-size: 1.1rem;
     line-height: 1.5rem;
-    text-align: center;
     text-wrap-style: balance;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    text-align: left;
+    text-wrap-style: balance;
 }
 
 nav {
     text-decoration: none;
+    line-height: 3rem;
+    display: flex;
+    gap: 70px;
+    flex-direction: row;
 }
 
 h1 {
@@ -45,6 +91,7 @@ h1 {
     font-style: bold;
     font-size: 2.5rem;
     color: rgb(123 93 235);
+    line-height: 1rem;
 }
 
 h2 {
@@ -54,6 +101,7 @@ h2 {
     font-size: 1.8rem;
     line-height: 1rem;
     color: rgb(64 61 99);
+    line-height: 2rem;
 }
 
 h3 {
@@ -64,5 +112,66 @@ h3 {
     color: rgb(123 93 235);
 }
 
-/*seciones, articulos*/
+/*secciones, articulos*/
 
+#hero {
+    text-align: left;
+    padding: 45px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 39px;
+    justify-content: space-evenly;
+}
+
+#quien {
+    font-family: "Rosario";
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: rgb(123 93 235);
+}
+
+.quiensoy {
+    display: flex;
+    width: 100vw;
+    max-width: 1200px;
+    flex-direction: row;
+    column-gap: 20px;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    align-content: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.tarjeta-educacion {
+    background: #bcc0df;
+    border-radius: 10px;
+    min-height: 16vh;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px 24px 15px;
+    gap: 7px;
+}
+
+.tarjeta-habilidades {
+    background: #bcc0df;
+    border-radius: 10px;
+    min-height: 16vh;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px 24px 15px;
+    gap: 7px;
+}
