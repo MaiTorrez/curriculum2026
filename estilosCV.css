@@ -23,10 +23,16 @@ body {
 
 header {
     background-color: #c4bdcd;
-    min-height: 32vh;
+    min-height: 30vh;
     padding: 29px 50px 22px;
     display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1200vw;
+    align-items: center;
     justify-content: center;
+    gap: 38px
 }
 
 main {
@@ -44,16 +50,19 @@ article {
     column-gap: 15px;
 }
 
+/* contenedor del header */
+
 .contenedor {
     display: flex;
     width: 100vw;
     max-width: 1200px;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-content: center;
+    flex-wrap: nowrap;
     flex-direction: column;
-    align-items: center;
+    flex-basis: content;
+    justify-content: center;
+    gap: 20px;
 }
+
 
 footer {
     background-color: #c4bdcd;
@@ -146,24 +155,18 @@ h3 {
     padding: 20px;
 }
 
-.tarjeta-educacion {
-    background: #bcc0df;
-    border-radius: 10px;
-    min-height: 16vh;
-    max-width: 800px;
+.habilidades-contenedor {
     display: flex;
-    flex-direction: column;
-    align-content: center;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: 20px 24px 15px;
-    gap: 7px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    column-gap: 15px;
+    width: 100%;
 }
 
 .tarjeta-habilidades {
     background: #bcc0df;
-    border-radius: 10px;
+    border-radius: 0px;
     min-height: 16vh;
     max-width: 800px;
     display: flex;
@@ -174,11 +177,14 @@ h3 {
     justify-content: flex-start;
     padding: 20px 24px 15px;
     gap: 7px;
+    flex-grow: 1;
+    align-content: center;
 }
 
-#tarjetas-crespo {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 50px 0px 15px;
+.tarjeta-experiencia {
+        display: flex;
+    flex-grow: 1;
+    padding: 40px;
+    flex-wrap: nowrap;
+    flex-direction: column;
 }
