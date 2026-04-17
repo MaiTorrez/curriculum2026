@@ -18,32 +18,30 @@
 /* Aplicaciones de tipo, color y tamaños*/
 
 body {
-    background-color: #f1f1f5;
+    background-color: #EDEDEE;
 }
 
 header {
-    min-height: 30vh;
-    padding: 29px 50px 22px;
+    background-color: #7C6DEE;
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
-    flex-direction: row;
+    padding: 10px 40px;
     align-items: center;
-    justify-content: center;
-    gap: 38px
 }
 
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 35px;
 }
 
 article {
-    display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
-    align-items: baseline;
-    column-gap: 15px;
+    align-content: center;
+    border-radius: 20px;
+    padding: 20px 40px 30px;
+    background-color: #53544f;
 }
 
 /* contenedor del header */
@@ -61,23 +59,32 @@ article {
 
 
 footer {
-    background-color: #c4bdcd;
-    min-height: 10vh;
+    background-color: #555652;
     display: flex;
     align-items: center;
     flex-direction: column;
-    min-height: 10vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    height: 13vh;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
 ul {
     display: flex;
     flex-wrap: wrap;
+    gap: 5px;
+    flex-direction: column;
+    align-content: flex-start;
+    padding: 10px 0px;
+}
+
+/*esta class es del ul del footer*/
+
+.lista-footer {
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    gap: 10px;
+    flex-direction: row;
+    gap: 42px;
 }
 
 * {
@@ -96,6 +103,8 @@ ul {
 p {
     text-align: left;
     text-wrap-style: balance;
+    max-width: 1000px;
+    color: #F3F3F3;
 }
 
 li {
@@ -104,7 +113,6 @@ li {
 }
 
 nav {
-    text-decoration: none;
     line-height: 3rem;
     display: flex;
     gap: 70px;
@@ -112,32 +120,45 @@ nav {
     flex-wrap: wrap;
 }
 
+a {
+    color: #edf0ea;
+    text-decoration: none;
+}
+
+.boton-contacto {
+    color: #7C6DEE;
+    background-color: #E8F164;
+    padding: 2px;
+    border-radius: 10px;
+}
+
 h1 {
     font-family: 'Basteleur', serif;
     font-weight: normal;
-    font-style: bold;
-    font-size: 2.5rem;
-    color: rgb(123 93 235);
-    line-height: 1rem;
+    font-size: 2.8rem;
+    color: #7C6DEE;
+    line-height: 2rem;
 }
 
 h2 {
     font-family: 'Rosario', sans-serif;
     font-weight: 300;
     font-style: italic;
-    font-size: 1.8rem;
-    line-height: 1rem;
+    font-size: 2.2rem;
     color: rgb(64 61 99);
     line-height: 2rem;
 }
 
 h3 {
     font-family: "Rosario", sans-serif;
-    font-weight: 500;
+    font-weight: 700;
     font-style: normal;
     font-size: 1.5rem;
-    color: rgb(123 93 235);
-    padding: 16px 0px 6px;
+    padding: 10px 6px 10px;
+    background-color: #e5ee63;
+    max-width: fit-content;
+    border-radius: 10px;
+    color: #7C6DEE;
 }
 
 h4 {
@@ -145,6 +166,7 @@ h4 {
     font-weight: 600;
     font-style: normal;
     padding: 10px 0px 0px;
+    color: #7072EB
 }
 
 h5 {
@@ -156,42 +178,41 @@ h5 {
 h6 {
     font-family: "Rosario", sans-serif;
     font-weight: 500;
-    font-style: n
+    font-style: normal;
+    color: #F3F3F3;
 }
 
 
 
 /*secciones, articulos*/
 
+#presentación {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 40px 0px 50px;
+    gap: 25px;
+    align-items: flex-end;
+    border-bottom: 1px solid #7C6DEE;
+}
+
 #hero {
-    text-align: left;
     padding: 45px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: baseline;
-    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    margin: 20px 40px;
+    gap: 30px;
 }
 
 #quien {
     font-family: "Rosario";
-    font-weight: 500;
+    font-weight: 700;
     font-style: normal;
     font-size: 1.5rem;
-    color: rgb(123 93 235);
-}
-
-.quiensoy {
-    display: flex;
-    width: 100vw;
-    max-width: 1200px;
-    flex-direction: row;
-    column-gap: 20px;
-    flex-wrap: nowrap;
-    align-items: baseline;
-    align-content: center;
-    justify-content: space-between;
-    padding: 20px;
+    color: #E4EE52;
+    line-height: 3rem;
 }
 
 #habilidades-contenedor {
@@ -199,18 +220,25 @@ h6 {
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
-    width: 62%
+    width: 70%;
+    gap: 50px;
 }
 
 .tarjeta-habilidades {
     display: flex;
     flex-direction: column;
-    padding: 20px 24px 15px;
+    padding: 30px 50px 30px 40px;
+    border: 1px solid #7072eb;
+    border-radius: 20px;
+    flex-grow: 1;
 }
 
 .tarjeta-experiencia {
     display: flex;
-    padding: 40px;
+    padding: 30px 30px 30px 40px;
     flex-wrap: nowrap;
     flex-direction: column;
+    border: 1px solid #7072eb;
+    border-radius: 20px;
+    flex-grow: 2;
 }

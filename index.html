@@ -8,53 +8,65 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Rosario:ital,wght@0,300..700;1,300..700&display=swap');
     </style>
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
 </head>
 
 <body>
     <header>
-        <img src="img/logo.png" alt="MairaTorrezIcon" width="200px" height="200px" />
+        <img src="img/logo.png" alt="mairatorrezlogo" width="40px" height="40px" />
 
-        <div class="contenedor">
-            <h1>Maira Torrez</h1>
-            <h2>Diseño y Comunicación Visual</h2>
+        <nav>
+            <a href="#">Diseño Gráfico</a>
+            <a href="#">Ilustración</a>
+            <a class="boton-contacto" href="#">Contacto</a>
+        </nav>
 
-            <nav>
-                <a href="#">Diseño Gráfico</a>
-                <a href="#">Ilustración</a>
-                <a href="#">Contacto</a>
-            </nav>
-        </div>
     </header>
 
     <main>
+        <section id="presentación">
+            <img src="img/logo.png" alt="MairaTorrezIcon" width="150px" height="150px" />
+
+            <div class="contenedor">
+                <h1>Maira Torrez</h1>
+                <h2>Diseño y Comunicación Visual</h2>
+        </section>
+
         <section id="hero">
-            <div class="quiensoy">
+            <img src="img/fdp.png" alt="yo" width="250px" height="250px" />
+            <article>
                 <h2 id="quien">
-                    ¿Quién?
+                    Hola! ¿Todo bien?
                 </h2>
-                <p> Hola! tengo 22 años y soy estudiante de diseño y comunicación visual en la universidad nacional de
+                <p> Hola! Soy Maira y tengo 22 años, soy estudiante avanzada de la carrera Diseño y Comunicación Visual
+                    en la Universidad Nacional de
                     Lanús. Disfruto de participar y llevar a cabo procesos creativos para distintos proyectos de diseño,
-                    en
-                    especial de piezas editoriales. También tengo otras habilidades cómo la ilustración digital y
+                    en especial de piezas editoriales. También tengo otras habilidades cómo la ilustración digital y
                     artesanal
                     orientado al diseño de personajes.</p>
-            </div>
+            </article>
+
         </section>
 
         <section id="habilidades-contenedor">
             <div class="tarjeta-habilidades">
                 <h3>Skills</h3>
-                <li>Adobe Creative Suite</li>
-                <li>Diseño de editorial y branding</li>
-                <li>Piezas digitales e impresas</li>
-                <li>Ilustración digital y tradicional</li>
-                <li>Composición visual y manejo de color</li>
-                <li>Desarrollo de conceptos creativos</li>
-                <li>Fotografía y edición</li>
-                <li>Postproducción para redes sociales</li>
+                <ul>
+                    <li>Adobe Creative Suite</li>
+                    <li>Diseño de editorial y branding</li>
+                    <li>Piezas digitales e impresas</li>
+                    <li>Ilustración digital y tradicional</li>
+                    <li>Composición visual y manejo de color</li>
+                    <li>Desarrollo de conceptos creativos</li>
+                    <li>Fotografía y edición</li>
+                    <li>Postproducción para redes sociales</li>
+                </ul>
 
                 <h3>Idiomas</h3>
-                <p>Inglés intermedio</p>
+                <ul>
+                    <li>Inglés intermedio</li>
+                    <li>Español Nativo</li>
+                </ul>
             </div>
 
             <div class="tarjeta-experiencia">
@@ -62,17 +74,20 @@
 
                 <h4>Fotógrafa de evento</h4>
                 <h5>Marzo 2024</h5>
-                <li>Cobertura fotográfica de eventos sociales</li>
-                <li>Edición y retoque de imágenes con herramientas digitales</li>
-                <li>Entrega de material optimizado para redes sociales</li>
-                <li>Composición y narrativa visual</li>
+                <ul>
+                    <li>Cobertura fotográfica de eventos sociales</li>
+                    <li>Edición y retoque de imágenes con herramientas digitales</li>
+                    <li>Entrega de material optimizado para redes sociales</li>
+                    <li>Composición y narrativa visual</li>
+                </ul>
 
                 <h4>Asistente de Taller de Diseño I - UNLa</h4>
                 <h5>2025 - en curso</h5>
-                <li>Orientación a estudiantes en procesos de diseño</li>
-                <li>Asistencia en correcciones de trabajos y proyectos</li>
-                <li>Trabajo en equipo con docentes</li>
-
+                <ul>
+                    <li>Orientación a estudiantes en procesos de diseño</li>
+                    <li>Asistencia en correcciones de trabajos y proyectos</li>
+                    <li>Trabajo en equipo con docentes</li>
+                </ul>
                 <h3>Educación</h3>
                 <h4>Lic. Diseño y Comunicación Visual</h4>
                 <h5>Universidad Nacional de Lanús 2022 - en curso</h5>
@@ -83,15 +98,24 @@
     </main>
     <footer>
         <h6>Chusmeá mis redes sociales</h6>
-        <ul>
-            <li> <img src="img/instagram-logo-.png" alt="instagram" /> </li>
-            <a href="https://www.instagram.com/torrezconz_?igsh=MXIzZGVwbGYzOGRzbA==">Instagram</a>
+        <ul class="lista-footer">
+            <li>
+                <a href="https://www.instagram.com/torrezconz_?igsh=MXIzZGVwbGYzOGRzbA==" target="_blank">
+                    <img src="img/instagram-logo-.png" alt="instagram">
+                </a>
+            </li>
 
-            <li> <img src="img/behance_logo_icon_186918.png" alt="behance" /> </li>
-            <a href="https://www.behance.net/mairav">Behance</a>
+            <li>
+                <a href="https://www.behance.net/mairav" target="_blank">
+                    <img src="img/behance_logo_icon_186918.png" alt="behance">
+                </a>
+            </li>
 
-            <li><img src="img/Logo_of_YouTube_(2015-2017).svg.png" alt="youtube" /> </li>
-            <a href="#">Youtube</a>
+            <li>
+                <a href="#" target="_blank">
+                    <img src="img/Logo_of_YouTube_(2015-2017).svg.png" alt="youtube">
+                </a>
+            </li>
         </ul>
     </footer>
 </body>
