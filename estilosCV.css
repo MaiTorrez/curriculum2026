@@ -22,7 +22,7 @@ body {
 }
 
 header {
-    background-color: #7C6DEE;
+    background-color: #7c6dee;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -34,7 +34,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 35px;
 }
 
 article {
@@ -53,36 +52,30 @@ article {
     flex-wrap: nowrap;
     flex-direction: column;
     flex-basis: content;
-    justify-content: center;
     gap: 20px;
 }
 
 
 footer {
-    background-color: #555652;
+    background-color: #7c6dee;
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 13vh;
     flex-wrap: wrap;
     justify-content: center;
+    min-height: 20vh;
 }
 
 ul {
     display: flex;
-    flex-wrap: wrap;
     gap: 5px;
     flex-direction: column;
-    align-content: flex-start;
     padding: 10px 0px;
 }
 
 /*esta class es del ul del footer*/
 
 .lista-footer {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
     flex-direction: row;
     gap: 42px;
 }
@@ -90,19 +83,15 @@ ul {
 * {
     font-family: "Rosario", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
     font-size: 1.1rem;
     line-height: 1.5rem;
     text-wrap-style: balance;
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
 p {
     text-align: left;
-    text-wrap-style: balance;
     max-width: 1025px;
     color: #F3F3F3;
 }
@@ -113,7 +102,6 @@ li {
 }
 
 nav {
-    line-height: 3rem;
     display: flex;
     gap: 70px;
     flex-direction: row;
@@ -123,6 +111,7 @@ nav {
 a {
     color: #edf0ea;
     text-decoration: none;
+    font-weight: 600;
 }
 
 .boton-contacto {
@@ -130,6 +119,10 @@ a {
     background-color: #E8F164;
     padding: 2px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
 }
 
 h1 {
@@ -137,8 +130,8 @@ h1 {
     font-weight: normal;
     font-size: 2.8rem;
     color: #7C6DEE;
-    line-height: 2rem;
 }
+
 
 h2 {
     font-family: 'Rosario', sans-serif;
@@ -149,10 +142,15 @@ h2 {
     line-height: 2rem;
 }
 
-h3 {
-    font-family: "Rosario", sans-serif;
+#quien {
     font-weight: 700;
     font-style: normal;
+    font-size: 1.5rem;
+    color: #E4EE52;
+    line-height: 3rem;
+}
+
+h3 {
     font-size: 1.5rem;
     padding: 10px 6px 10px;
     background-color: #e5ee63;
@@ -162,17 +160,18 @@ h3 {
 }
 
 h4 {
-    font-family: "Rosario";
-    font-weight: 600;
     font-style: normal;
     padding: 10px 0px 0px;
     color: #7072EB
 }
 
 h5 {
-    font-family: "Rosario", sans-serif;
     font-style: italic;
     font-weight: 300;
+}
+
+.compu3 {
+    color: #EDEDEE;
 }
 
 h6 {
@@ -180,10 +179,11 @@ h6 {
     font-weight: 500;
     font-style: normal;
     color: #F3F3F3;
+    line-height: 2rem;
 }
 
 
-/*secciones, articulos*/
+/*secciones, clases, articulos*/
 
 #presentación {
     display: flex;
@@ -199,28 +199,16 @@ h6 {
 #hero {
     padding: 45px;
     display: flex;
-    flex-wrap: nowrap;
-    align-items: stretch;
     margin: 20px 40px;
     gap: 30px;
 }
 
-#quien {
-    font-family: "Rosario";
-    font-weight: 700;
-    font-style: normal;
-    font-size: 1.5rem;
-    color: #E4EE52;
-    line-height: 3rem;
-}
 
 #habilidades-contenedor {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: baseline;
     width: 60%;
-    gap: 50px;  
+    gap: 50px;
 }
 
 .tarjeta-habilidades {
@@ -235,9 +223,46 @@ h6 {
 .tarjeta-experiencia {
     display: flex;
     padding: 30px 30px 30px 40px;
-    flex-wrap: nowrap;
     flex-direction: column;
     border: 1px solid #7072eb;
     border-radius: 20px;
     flex-grow: 2;
+    background: none;
+}
+
+#trabajos {
+    background-color: #555652;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    margin: 55px 0px;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.trabajos-article {
+    display: flex;
+    background: none;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+
+#ultimos-proyectos {
+    font-size: 2rem;
+    color: #EDEDEE;
+}
+
+.nombre-trabajo {
+    color: #EDEDEE
+}
+
+#final {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
 }
