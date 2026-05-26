@@ -16,35 +16,28 @@
 }
 
 /* Aplicaciones de tipo, color y tamaños*/
-
 body {
-    background-color: #EDEDEE;
+    background-color: #53544f;
 }
 
 header {
     background-color: #7c6dee;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 10px 40px;
     align-items: center;
+    padding: 0px 68px;
+    position: sticky;
+    top: 0;
 }
 
-main {
+nav {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    gap: 32px;
+
 }
 
-article {
-    align-content: center;
-    border-radius: 20px;
-    padding: 20px 40px 30px;
-    background-color: #53544f;
-}
-
-/* contenedor del header */
-
+/* contenedor del hero */
 .contenedor {
     display: flex;
     width: 100vw;
@@ -55,15 +48,21 @@ article {
     gap: 20px;
 }
 
-
 footer {
     background-color: #7c6dee;
     display: flex;
     align-items: center;
-    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     min-height: 20vh;
+    padding: 0 50px;
+}
+
+.redes {
+    display: flex;
+    align-items: center;
+    gap: 27px;
+    flex-direction: row;
 }
 
 ul {
@@ -73,21 +72,86 @@ ul {
     padding: 10px 0px;
 }
 
-/*esta class es del ul del footer*/
-
-.lista-footer {
-    flex-direction: row;
-    gap: 42px;
+li {
+    list-style: none;
 }
 
+/*¿la tipografia que se va a usar mayomente está bien que la ponga en la etiqueta universal o deberia ir en <p>?*/
 * {
     font-family: "Rosario", sans-serif;
-    font-optical-sizing: auto;
-    font-size: 1.1rem;
-    line-height: 1.5rem;
+    font-size: 1.12rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.76rem;
     text-wrap-style: balance;
     margin: 0;
     box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.botonera {
+    color: #EDEDEE;
+    border: solid 2px;
+    border-radius: 15px;
+    padding: 0px 23px;
+}
+
+.botonera:hover {
+    background-color: #E5EE63;
+    color: var(--Violeta, #7C6DEE);
+}
+
+.botonera-negra {
+    color: #53544F;
+    border: solid 2px;
+    border-radius: 15px;
+    padding: 0px 23px;
+}
+
+.botonera-negra:hover {
+    background: var(--Verde, #E5EE63);
+    color: var(--Violeta, #7C6DEE);
+}
+
+h1 {
+    font-family: 'Basteleur', serif;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 4rem;
+    color: #53544F;
+}
+
+.h1-verde {
+    color: #E5EE63;
+}
+
+.h1-violeta {
+    color: var(--Negro, #7C6DEE);
+}
+
+h2 {
+    font-family: Basteleur;
+    font-size: 1.78rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.7rem;
+    color: var(--Verde, #E5EE63)
+}
+
+.h2-negro {
+    color: #53544F;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.375rem;
+    color: #F3F3F3;
 }
 
 p {
@@ -96,173 +160,103 @@ p {
     color: #F3F3F3;
 }
 
-li {
-    list-style: none;
-    line-height: 35px;
+.p-negro {
+    color: #53544F;
 }
 
-nav {
-    display: flex;
-    gap: 70px;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-a {
-    color: #edf0ea;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.boton-contacto {
-    color: #7C6DEE;
-    background-color: #E8F164;
-    padding: 2px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-weight: 600;
-}
-
-h1 {
-    font-family: 'Basteleur', serif;
-    font-weight: normal;
-    font-size: 2.8rem;
-    color: #7C6DEE;
-}
-
-
-h2 {
-    font-family: 'Rosario', sans-serif;
-    font-weight: 300;
-    font-style: italic;
-    font-size: 2.2rem;
-    color: rgb(64 61 99);
-    line-height: 2rem;
-}
-
-#quien {
-    font-weight: 700;
-    font-style: normal;
-    font-size: 1.5rem;
-    color: #E4EE52;
-    line-height: 3rem;
-}
-
-h3 {
-    font-size: 1.5rem;
-    padding: 10px 6px 10px;
-    background-color: #e5ee63;
-    max-width: fit-content;
-    border-radius: 10px;
-    color: #7C6DEE;
-}
-
-h4 {
-    font-style: normal;
-    padding: 10px 0px 0px;
-    color: #7072EB
-}
-
-h5 {
-    font-style: italic;
-    font-weight: 300;
-}
-
-.compu3 {
-    color: #EDEDEE;
-}
-
-h6 {
-    font-family: "Rosario", sans-serif;
+.bajada {
+    font-size: 1.85rem;
     font-weight: 500;
-    font-style: normal;
-    color: #F3F3F3;
-    line-height: 2rem;
+    line-height: 2.8rem;
+    color: var(--Negro, #53544F);
 }
-
 
 /*secciones, clases, articulos*/
-
-#presentación {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    padding: 40px 0px 50px;
-    gap: 25px;
-    align-items: flex-end;
-    border-bottom: 1px solid #7C6DEE;
-}
-
-#hero {
-    padding: 45px;
-    display: flex;
-    margin: 20px 40px;
-    gap: 30px;
-}
-
-
-#habilidades-contenedor {
-    display: flex;
-    align-items: baseline;
-    width: 60%;
-    gap: 50px;
-}
-
-.tarjeta-habilidades {
-    display: flex;
-    flex-direction: column;
-    padding: 30px 50px 30px 40px;
-    border: 1px solid #7072eb;
-    border-radius: 20px;
-    flex-grow: 1;
-}
-
-.tarjeta-experiencia {
-    display: flex;
-    padding: 30px 30px 30px 40px;
-    flex-direction: column;
-    border: 1px solid #7072eb;
-    border-radius: 20px;
-    flex-grow: 2;
-    background: none;
-}
-
-#trabajos {
-    background-color: #555652;
-    display: flex;
-    flex-direction: column;
-    padding: 50px;
-    margin: 55px 0px;
-    align-items: center;
-    gap: 30px;
+.hero {
+    background-image: url(img/72dpi/estrellas-02.jpg);
+    background-position: center;
+    height: 790px;
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
-.trabajos-article {
+.contenedor {
     display: flex;
-    background: none;
-    padding: 0;
+    justify-content: flex-end;
+    align-items: flex-start;
     flex-wrap: wrap;
+    gap: 0;
+}
+
+.sobre-mi {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding: 35px;
+}
+
+.sobre-mi-contenedor {
+    display: flex;
+    align-items: center;
+    max-width: 65%;
+    flex-direction: row;
     gap: 50px;
 }
 
-
-#ultimos-proyectos {
-    font-size: 2rem;
-    color: #EDEDEE;
+.columna-sobremi {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 51%;
 }
 
-.nombre-trabajo {
-    color: #EDEDEE
+.conjunto-icons {
+    display: flex;
+    align-items: center;
+    gap: 222px;
+    align-self: stretch;
 }
 
-#final {
+.icon {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
 }
+
+#peces:hover img {
+    content: url(img/svg/pecesbeso.svg);
+}
+
+#gato:hover img {
+    content: url(img/svg/gatoestrella.svg);
+}
+
+#zz:hover img {
+    content: url(img/svg/zzestrella.svg);
+}
+
+#invitacion {
+    background: url(img/72dpi/te_invito_a_ver_mi\ portfolio.jpg) lightgray 50% / cover no-repeat;
+    height: 62vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 70px;
+}
+
+/*curriculum*/
+.cv-sobremi {
+    background: var(--Gris, #EDEDEE);
+    display: flex;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+}<
