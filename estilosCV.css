@@ -12,7 +12,7 @@
     font-family: "Basteleur";
     src: url(fuentes/Basteleur-Bold.ttf) format(truetype);
     font-weight: normal;
-    font-style: bold;
+    font-style: normal;
 }
 
 /* Aplicaciones de tipo, color y tamaños*/
@@ -25,7 +25,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 68px;
+    padding: 3px 68px 0px;
     position: sticky;
     top: 0;
 }
@@ -74,6 +74,7 @@ ul {
 
 li {
     list-style: none;
+    color: #EDEDEE;
 }
 
 /*¿la tipografia que se va a usar mayomente está bien que la ponga en la etiqueta universal o deberia ir en <p>?*/
@@ -146,12 +147,21 @@ h2 {
     color: #53544F;
 }
 
+
 h3 {
-    font-size: 1.5rem;
+font-size: 1.7rem;
     font-style: normal;
     font-weight: 700;
     line-height: 2.375rem;
     color: #F3F3F3;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight:600;
+    line-height: 2.375rem;
+    color: #E5EE63;
 }
 
 p {
@@ -162,6 +172,10 @@ p {
 
 .p-negro {
     color: #53544F;
+}
+
+.italic {
+    font-style: italic;
 }
 
 .bajada {
@@ -208,13 +222,14 @@ p {
     max-width: 65%;
     flex-direction: row;
     gap: 50px;
+    justify-content: center;
 }
 
 .columna-sobremi {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 51%;
+    width: 40%;
 }
 
 .conjunto-icons {
@@ -252,11 +267,146 @@ p {
 }
 
 /*curriculum*/
-.cv-sobremi {
+
+summary {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 37px;
+    padding: 20px;
+    border-bottom: solid 2px #7C6DEE;
+}
+
+#desplegable {
+    margin: 0% 11%;
+    padding: 0px 50px;
+
+}
+
+#cv-sobremi {
     background: var(--Gris, #EDEDEE);
     display: flex;
-    padding: 0px;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 60px;
-}<
+    gap: 70px;
+}
+
+#escribime {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85px;
+}
+
+#escribime:hover h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--Negro, #53544F);
+    background-color: var(--Verde, #E5EE63);
+    width: 1920px;
+    height: 85px;
+}
+
+.info {
+    padding: 45px 30px;
+    display: flex;
+    align-items: center;
+    border-bottom: solid 1px #ffff;
+    justify-content: space-between;
+}
+
+.habilidades-li {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 45px 30px;
+    border-bottom: solid 1px #EDEDEE;
+}
+
+#apps {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+
+/*contacto*/
+
+.main-contacto {
+    display: flex;
+    margin: 50px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.idea {
+    width: 47%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 42vw;
+    height: 80vh;
+    background-color: #E5EE63;
+    gap: 33px;
+    padding: 65px;
+    justify-content: center;
+}
+
+
+form section {
+    display: flex;
+    flex-direction: row;
+    max-width: 475px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+.check-list {
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+}
+
+label {
+    font-weight: 700;
+    color: #53544F;
+}
+
+input {
+    background-color: #EDEDEE;
+    border-radius: 15px;
+    padding: 8px;
+    border: solid 1px #53544f;
+}
+
+textarea {
+    border-radius: 32px;
+    max-width: 676px;
+    min-height: 300px;
+    padding: 8px;
+}
+
+.button-enviar {
+    background-color: #E5EE63;
+    width: 15%;
+    padding: 0;
+}
+
+.button-enviar:hover {
+    color: #E5EE63;
+    background-color: #7C6DEE;
+}
+
+/*el = me lo pone en rojo y no me lo toma
+input[type="checkbox"]
+*/
