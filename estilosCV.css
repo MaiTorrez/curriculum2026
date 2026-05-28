@@ -186,7 +186,7 @@ p {
 }
 
 /*secciones, clases, articulos*/
-.hero {
+#hero {
     background-image: url(img/72dpi/estrellas-02.jpg);
     background-position: center;
     height: 790px;
