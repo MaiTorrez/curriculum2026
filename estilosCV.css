@@ -299,31 +299,43 @@ p {
     padding: 70px;
 }
 
-@media screen and (max-width: 600px) {
-    header {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-}
-
 /*curriculum*/
+
 
 summary {
     list-style: none;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     align-items: center;
-    gap: 37px;
-    padding: 20px;
-    border-bottom: solid 2px var(--estrella);
+    padding: 36px 40px 20px;
+    border-bottom: solid 3px var(--estrella);
+    justify-content: space-between;
+    margin-bottom: -20px;
+    cursor: pointer;
 }
 
-/*tengo que ponerle la animacion al desplegable*/
+details[open] summary{
+    margin-bottom: 10px;
+    transition: margin 600ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+details[open] summary img {
+    transition: transform .4s ease;
+      transform: rotate(20deg);
+}
+
 #desplegable {
-    margin: 0% 11%;
+    margin: 0% 12% 2%;
     padding: 70px 50px;
+}
+
+#info-curriculum {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: center;
+    border-top: solid 2px var(--espacio);
+    padding-top: 30px;
 }
 
 #cv-sobremi {
@@ -357,7 +369,7 @@ summary {
 }
 
 .info {
-    padding: 45px 30px;
+    padding: 54px 42px 26px;
     display: flex;
     align-items: center;
     border-bottom: solid 1px var(--polvo);
@@ -525,4 +537,57 @@ textarea {
 #ilustracion img:hover {
     filter: grayscale(0%);
     transform: scale(1.03)
+}
+
+
+@media screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        justify-content: space-evenly;
+        max-width: 600px;
+        min-height: 15vh;
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+
+    .contenedor {
+        flex-wrap: wrap;
+        gap: 0px;
+        align-content: center;
+    }
+
+    #hero {
+        flex-direction: column;
+    }
+
+    .sobre-mi-contenedor {
+        max-width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .columna-sobremi {
+        width: 100%;
+    }
+
+    .conjunto-icons {
+        gap: 44px;
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    footer {
+        flex-direction: column-reverse;
+        align-content: center;
+    }
+
+    footer p {
+        text-align: center;
+    }
+
+    .estrella-footer {
+        position: static;
+    }
 }
