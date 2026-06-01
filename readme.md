@@ -1,7 +1,8 @@
-Torrez Maira Curriculum Vitae
+Torrez Maira Portfolio 2026
 
-Este es el primer trabajo de la materia de Computación III del año 2026 1er cuatrimestre. El trabajo consiste en desarrollar un Curriculum Vitae con los datos del alumno, esto no es más que una razón para aprender a dominar el uso del código HTML5 y aplicar estilos mediante .css, a su vez, la alineación y distribución del espacio se realizó con la herramienta flexbox.
+El tp3 de la materia Computación III es una continuación del tp1 Curriculum Vitae. Aprendimos a maquetar en figma las páginas del portfolio desde prototipos en baja y alta, para luego traducirlos a código, introduciendo nuevas herramientas como animación, galerias, pseudoclases, posiciones, formularios y @media.
 
 Especificaciones técnicas
-Se trabajó en una pantalla de 1920 x 1080 px 
-El editor de código que se usó es Visual Studio Code
+
+Trabaje en una pantalla de 1920 x 1080
+El editor de codigo que use fue Visual Studio Code
