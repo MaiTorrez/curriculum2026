@@ -217,9 +217,7 @@ p {
     background-image: url(img/72dpi/estrellas_hero.jpg);
     background-position: center;
     height: 790px;
-    width: 100%;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -233,7 +231,6 @@ p {
 .sobre-mi {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     gap: 50px;
     flex-wrap: wrap;
@@ -292,7 +289,6 @@ p {
 
 /*curriculum*/
 
-
 summary {
     list-style: none;
     display: flex;
@@ -333,7 +329,6 @@ details[open] summary img {
     background: var(--polvo);
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     padding: 78px;
     gap: 35px;
@@ -412,10 +407,8 @@ form {
 
 form section {
     display: flex;
-    flex-direction: row;
     max-width: 475px;
     justify-content: space-between;
-    align-items: center;
     flex-wrap: wrap;
 }
 
@@ -428,6 +421,7 @@ form div {
     display: flex;
     flex-direction: row;
     gap: 28px;
+    flex-wrap: wrap;
 }
 
 label {
@@ -494,7 +488,6 @@ input[type="checkbox"]:checked {
 
 #galeria {
     display: flex;
-    justify-content: center;
     margin: 5% 0%;
     flex-direction: column;
     align-items: center;
@@ -577,20 +570,22 @@ input[type="checkbox"]:checked {
     }
 
     .botonera {
-        padding: 0px 14px;
+        padding: 0px 8px;
         font-size: 1rem;
     }
 
     .h2-negro {
-        color: var(--polvo)
+        color: var(--polvo);
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     }
 
     .botonera-negra {
-        color: var(--fugaz);
+        color: var(--polvo);
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.06);
     }
 
     nav {
-        gap: 5px;
+        gap: 8px;
     }
 
     .contenedor {
@@ -639,5 +634,6 @@ input[type="checkbox"]:checked {
 
     #invitacion {
         align-items: center;
+        height: 60vh;
     }
 }
