@@ -6,3 +6,4 @@ Especificaciones técnicas
 
 Trabaje en una pantalla de 1920 x 1080
 El editor de codigo que use fue Visual Studio Code
+Link a figma: https://www.figma.com/design/GZ3zcXXPeagn9REMi3MlRn/Portfolio?node-id=116-97&t=IqWGOvppLKLGla4q-1
