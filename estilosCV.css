@@ -54,16 +54,6 @@ nav {
 
 }
 
-/* contenedor del hero */
-.contenedor {
-    display: flex;
-    width: 100vw;
-    max-width: 1200px;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    flex-basis: content;
-    gap: 20px;
-}
 
 footer {
     background-color: var(--estrella);
@@ -237,10 +227,7 @@ p {
 
 .contenedor {
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 0;
+    flex-direction: column;
 }
 
 .sobre-mi {
@@ -353,7 +340,7 @@ details[open] summary img {
 }
 
 #escribime {
-    color: var (var(--espacio));
+    color: var(--espacio);
     background-color: var(--fugaz);
     display: flex;
     justify-content: center;
@@ -505,8 +492,6 @@ input[type="checkbox"]:checked {
     align-items: center;
 }
 
-/*Al hacer scroll en esta página la galeria se pone por encima del header. */
-
 #galeria {
     display: flex;
     justify-content: center;
@@ -541,28 +526,16 @@ input[type="checkbox"]:checked {
     padding-top: 30px;
 }
 
-#diseño-grafico img {
+#diseño-grafico img, #ilustracion img {
     border-radius: 25px;
     transition: .4s ease;
     filter: grayscale(100%);
 }
 
-#diseño-grafico img:hover {
+#diseño-grafico img:hover, #ilustracion img:hover {
     filter: grayscale(0%);
     transform: scale(1.03)
 }
-
-#ilustracion img {
-    border-radius: 25px;
-    transition: .4s ease;
-    filter: grayscale(100%);
-}
-
-#ilustracion img:hover {
-    filter: grayscale(0%);
-    transform: scale(1.03)
-}
-
 
 @media screen and (max-width: 500px) {
 
@@ -590,7 +563,6 @@ input[type="checkbox"]:checked {
     header {
         flex-direction: column;
         justify-content: space-evenly;
-        max-width: 500px;
         min-height: 15vh;
     }
 
@@ -601,11 +573,20 @@ input[type="checkbox"]:checked {
     a {
         display: flex;
         justify-content: center;
+
     }
 
     .botonera {
         padding: 0px 14px;
         font-size: 1rem;
+    }
+
+    .h2-negro {
+        color: var(--polvo)
+    }
+
+    .botonera-negra {
+        color: var(--fugaz);
     }
 
     nav {
@@ -644,7 +625,6 @@ input[type="checkbox"]:checked {
     }
 
     footer {
-        max-width: 500px;
         flex-direction: column-reverse;
         align-content: center;
     }
