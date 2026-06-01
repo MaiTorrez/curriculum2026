@@ -44,6 +44,7 @@ header {
     padding: 3px 68px 0px;
     position: sticky;
     top: 0;
+    z-index: 10;
 }
 
 nav {
@@ -185,6 +186,10 @@ h3 {
     font-weight: 700;
     line-height: 2.375rem;
     color: var(--polvo);
+}
+
+.h3-negro {
+    color: var(--espacio);
 }
 
 h4 {
@@ -390,6 +395,10 @@ details[open] summary img {
 
 /*contacto*/
 
+.contacto-body {
+    background-image: url(img/72dpi/estrellas_contacto.jpg);
+}
+
 .main-contacto {
     display: flex;
     margin: 50px;
@@ -399,6 +408,7 @@ details[open] summary img {
 
 .idea {
     width: 47%;
+    text-align: center;
 }
 
 form {
@@ -406,7 +416,7 @@ form {
     flex-direction: column;
     width: 42vw;
     height: 80vh;
-    background-color: var(--fugaz);
+    background-color: var(--espacio);
     gap: 33px;
     padding: 65px;
     justify-content: center;
@@ -435,14 +445,17 @@ form div {
 
 label {
     font-weight: 700;
-    color: var(--espacio);
+    color: var(--polvo);
+    display: flex;
+    align-items: center;
+    gap: 11px;
 }
 
 input {
     background-color: var(--polvo);
     border-radius: 15px;
     padding: 8px;
-    border: solid 1px var(--espacio);
+    border: solid 1px var(--polvo);
 }
 
 textarea {
@@ -453,18 +466,30 @@ textarea {
 }
 
 .button-enviar {
-    background-color: var(--fugaz);
+    background-color: var(--espacio);
+    color: var(--polvo);
     width: 15%;
     padding: 0;
+    border-color: var(--polvo);
 }
 
 .button-enviar:hover {
-    color: var(--fugaz);
-    background-color: var(--estrella);
+    color: var(--estrella);
+    background-color: var(--fugaz);
 }
 
-/*input[type="checkbox"] el = me lo pone en rojo y no me lo toma*/
+input[type="checkbox"] {
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background-color: var(--polvo);
+    border-radius: 3px;
+}
 
+input[type="checkbox"]:checked {
+    background: url(img/svg/checked.svg) center/100% no-repeat;
+    background-color: var(--polvo);
+}
 
 /*portfolio*/
 
@@ -539,7 +564,7 @@ textarea {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
 
     p {
         font-size: 1rem;
@@ -565,7 +590,7 @@ textarea {
     header {
         flex-direction: column;
         justify-content: space-evenly;
-        max-width: 600px;
+        max-width: 500px;
         min-height: 15vh;
     }
 
@@ -580,6 +605,7 @@ textarea {
 
     .botonera {
         padding: 0px 14px;
+        font-size: 1rem;
     }
 
     nav {
@@ -592,6 +618,10 @@ textarea {
 
     #hero {
         flex-direction: column;
+    }
+
+    .contenedor {
+        align-items: center;
     }
 
     .estrella-foto {
@@ -614,6 +644,7 @@ textarea {
     }
 
     footer {
+        max-width: 500px;
         flex-direction: column-reverse;
         align-content: center;
     }
@@ -624,5 +655,9 @@ textarea {
 
     .estrella-footer {
         position: static;
+    }
+
+    #invitacion {
+        align-items: center;
     }
 }
